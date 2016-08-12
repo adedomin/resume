@@ -1,0 +1,125 @@
+\documentclass[10pt,letterpaper,]{article}
+\usepackage[]{mathpazo}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=3cm]{geometry}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={Anthony DeDominic},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\hyphenpenalty 10000
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[L]{Anthony DeDominic}
+\fancyhead[C]{}
+\fancyhead[R]{anthony@dedominic.pw}
+\fancyfoot[L]{}
+\fancyfoot[C]{\thepage}
+\fancyfoot[R]{}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{multirow}
+\author{Anthony DeDominic\\anthony@dedominic.pw\\REDACTED LOCATION\\REDACTED PHONE}
+
+% \title{Anthony DeDominic}
+\date{}
+
+\begin{document}
+% \maketitle
+
+\subsection{Goals}\label{goals}
+
+\emph{Professional GNU/Linux system administrator and developer seeking
+exciting and challenging oppertunities to solve distributed environment
+management problems. Would also prefer to work for a company with
+a strong respect for free and open source software and one willing to
+contribute back upstream.}
+
+\subsection{Education}\label{education}
+
+\begin{center}
+\begin{tabular}{l|l}
+    \multirow{4}{*}{Eastern Connecticut State University} & Bachelors in Computer Science \\
+    & Willimantic, Connecticut USA \\
+    & GPA 4.0 \\
+    & Graduating Dec 2016 \\
+& \\
+    \multirow{4}{*}{Manchester Community College} & Associates in General Studies \\
+    & Manchester, Connecticut USA \\
+    & GPA 3.8 \\
+    & Graduated Dec 2014 \\
+\end{tabular}
+\end{center}
+
+\subsection{Work Experience}\label{work-experience}
+
+\begin{center}
+\begin{tabularx}{\textwidth}{l|X}
+    Cigna - Private Cloud \\
+    CURRENT - Jan 2016 & I was tasked with developing various features for our internally used cloud management and orchestration technologies to enable customers to further automate their various workloads. An example, I developed a feature which allowed for centralized public key storage. This allowed customers the ability to passwordlessly log in to any machine they had access to. \\
+    & \\
+    Cigna - Delivery Accelerations \\
+    Dec 2015 - Jan 2014 & In this role I was tasked with developing features to enable customers to quickly create advanced continuous integration and deployment pipelines. I was also tasked with creating APIs to allow for enabling dynamic monitoring for our services using technologies like Nagios Core. \\
+\end{tabularx}
+\end{center}
+
+\subsection{Competencies}\label{competencies}
+
+\begin{center}
+\begin{tabular}{l|l}
+    \multirow{2}{*}{Github} & https://github.com/adedomin \\
+                            & https://github.com/GeneralUnRest \\
+    \\
+    \multirow{3}{*}{Languages} & Java, Scala, Clojure (Build tools, IDEs and various frameworks) \\
+                               & JavaScript (Node.js, web development, tools, etc) \\
+                               & Perl 6, Python, Shell scripting, other scripting languages \\
+    \\
+    \multirow{5}{*}{Concepts} & Continuous integration and continuous deployment \\
+                              & Distributed Computing (microservice oriented web applications) \\
+                              & Object oriented and functional design \\
+                              & Advanced text processing \\
+                              & Leveraging various databases for object and persistent app storage \\
+\end{tabular}
+\end{center}
+
+\end{document}
