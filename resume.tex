@@ -56,21 +56,24 @@
 \let\oldsubparagraph\subparagraph
 \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
 \fi
+
+% hyphens are gross
 \hyphenpenalty 10000
+
+% Header bar
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhead[L]{Anthony DeDominic}
 \fancyhead[C]{}
 \fancyhead[R]{anthony@dedominic.pw}
 \fancyfoot[L]{}
-\fancyfoot[C]{\thepage}
+\fancyfoot[C]{}
 \fancyfoot[R]{}
 \usepackage{tabularx}
 \usepackage{multirow}
 
 \author{Anthony DeDominic\\anthony@dedominic.pw\\REDACTED LOCATION\\REDACTED PHONE}
 \title{Anthony DeDominic}
-\date{}
 
 \begin{document}
 % \maketitle
@@ -94,6 +97,7 @@ I am seeking to work for teams of other like minded and capable individuals.}
         & Eastern Connecticut State University \\
         & Willimantic, Connecticut USA \\
         & Bachelors in Computer Science \\
+        & UPE Honors Society \\
         & GPA 4.0 \\
     \end{tabular}
     \end{minipage}
@@ -119,10 +123,10 @@ I am seeking to work for teams of other like minded and capable individuals.}
     Cigna - Private Cloud \\
     CURRENT - Mar 2016 \\
     \end{tabular}
-    & I was tasked with developing various features for our 
+    & Tasked with developing various features for our 
     internally used cloud management and orchestration technologies 
     to enable customers to further automate their various workloads. 
-    An example, I developed a feature which allowed for centralized 
+    An example: Developed a feature which allowed for centralized 
     public key storage. This allowed customers the ability to passwordlessly 
     log in to any machine they had access to. \\
     & \\
@@ -130,9 +134,10 @@ I am seeking to work for teams of other like minded and capable individuals.}
     Cigna - Delivery Accelerations \\
     Mar 2016 - Jan 2014 \\
     \end{tabular}
-    & In this role I was tasked with developing features to enable customers 
+    & Tasked with developing features to enable customers 
     to quickly create advanced continuous integration and deployment
-    pipelines. I was also tasked with creating APIs to allow for enabling 
+    pipelines. 
+    Was also tasked with creating APIs to allow for enabling 
     dynamic monitoring for our services using technologies like Nagios Core. \\
 \end{tabularx}
 \end{center}
