@@ -70,7 +70,10 @@
 \fancyfoot[C]{}
 \fancyfoot[R]{}
 \usepackage{tabularx}
+\def\tabularxcolumn#1{m{#1}}
 \usepackage{multirow}
+\usepackage{caption}
+\captionsetup{labelformat=empty}
 
 \author{Anthony DeDominic\\anthony@dedominic.pw\\REDACTED LOCATION\\REDACTED PHONE}
 \title{Anthony DeDominic}
@@ -92,8 +95,8 @@ I am seeking to work for teams of other like-minded and capable individuals.}
 \begin{table}[!h]
     \begin{minipage}{0.5\linewidth}
     \centering
-    \begin{tabular}{l|l}
-        \multirow{4}{*}{Jan 2017}
+    \begin{tabular}{r|l}
+        \multirow{5}{*}{Jan 2017}
         & Eastern Connecticut State University \\
         & Willimantic, Connecticut USA \\
         & Bachelors in Computer Science \\
@@ -103,7 +106,7 @@ I am seeking to work for teams of other like-minded and capable individuals.}
     \end{minipage}
     \begin{minipage}{0.5\linewidth}
     \centering
-    \begin{tabular}{l|l}
+    \begin{tabular}{r|l}
         \multirow{4}{*}{Dec 2014} 
         & Manchester Community College \\
         & Manchester, Connecticut USA \\
@@ -115,37 +118,35 @@ I am seeking to work for teams of other like-minded and capable individuals.}
 
 \subsection{Work Experience}\label{work-experience}
 
-\begin{center}
-% center inline table vertically
-\def\tabularxcolumn#1{m{#1}}
-\begin{tabularx}{\textwidth}{l|X}
-    \begin{tabular}{@{}l@{}}
-    Cigna - Private Cloud \\
-    Sep 2016 - Mar 2016 \\
-    \end{tabular}
-    & Tasked with developing various features for
-    internally used cloud management and orchestration technologies 
-    to enable customers to further automate their various workloads. 
-    One example: developed a feature which allowed centralized public 
-    key storage; this allows customers to login without the
-    use of a password. \\
-    & \\
-    \begin{tabular}{@{}l@{}}
-    Cigna - Delivery Accelerations \\
-    Mar 2016 - Jan 2014 \\
-    \end{tabular}
-    & Tasked with developing features to enable customers 
-    to quickly create advanced continuous integration and deployment
-    pipelines. 
-    Was also tasked with creating APIs to allow for enabling 
-    dynamic monitoring for services using technologies like Nagios Core. \\
-\end{tabularx}
-\end{center}
+\begin{table}[!h]
+\centering
+    \caption{Cigna --- Jan 2014 to Sep 2016}
+    \begin{tabularx}{\textwidth}{r|X}
+        \begin{tabular}{@{}l@{}}
+            Private Cloud \\
+        \end{tabular}
+        & Tasked with developing various features for
+        internally used cloud management and orchestration technologies 
+        to enable customers to further automate their various workloads. 
+        One example: developed a feature which allowed centralized public 
+        key storage; this allows customers to login without the
+        use of a password. \\
+        & \\
+        \begin{tabular}{@{}l@{}}
+            Delivery Accelerations \\
+        \end{tabular}
+        & Tasked with developing features to enable customers 
+        to quickly create advanced continuous integration and deployment
+        pipelines. 
+        Was also tasked with creating APIs to allow for enabling 
+        dynamic monitoring for services using technologies like Nagios Core. \\
+    \end{tabularx}
+\end{table}
 
 \subsection{Competencies}\label{competencies}
 
 \begin{center}
-\begin{tabular}{l|l}
+\begin{tabular}{r|l}
     \multirow{2}{*}{Github} & \href{https://github.com/adedomin}{https://github.com/adedomin} \\
                             & \href{https://github.com/GeneralUnRest}{https://github.com/GeneralUnRest} \\
     \\
