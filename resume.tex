@@ -7,13 +7,13 @@
 % You should have received a copy of the license along with this
 % work.  If not, see <http://creativecommons.org/licenses/by-sa/4.0/>.
 %
-\documentclass[9pt,letterpaper,]{article}
+\documentclass[letterpaper,]{article}
 %\renewcommand{\familydefault}{\sfdefault}
 \usepackage[]{librebaskerville}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
 \usepackage{qrcode}
-\usepackage{fixltx2e} % provides \textsubscript
+% deprecated as of 2015 \usepackage{fixltx2e} % provides \textsubscript
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
@@ -95,7 +95,7 @@ I am seeking to work for teams of other like-minded and capable individuals.}
 
 \subsection{Education}\label{education}
 
-\begin{table}[!h]
+\begin{table}[!ht]
     \begin{minipage}{0.5\linewidth}
     \centering
     \begin{tabular}{r|l}
@@ -121,7 +121,7 @@ I am seeking to work for teams of other like-minded and capable individuals.}
 
 \subsection{Work Experience}\label{work-experience}
 
-\begin{table}[!h]
+\begin{table}[!ht]
 \centering
     \caption{Gilbarco Veeder-Root --- March 2017 to \emph{Current}}
     \begin{tabularx}{\textwidth}{r|X}
@@ -134,7 +134,7 @@ I am seeking to work for teams of other like-minded and capable individuals.}
     \end{tabularx}
 \end{table}
 
-\begin{table}[!h]
+\begin{table}[!ht]
 \centering
     \caption{Cigna --- Jan 2014 to Sep 2016}
     \begin{tabularx}{\textwidth}{r|X}
@@ -159,7 +159,7 @@ I am seeking to work for teams of other like-minded and capable individuals.}
 
 \subsection{Notable Projects}\label{projects}
 
-\begin{table}[!h]
+\begin{table}[!ht]
 \centering
     \caption{MonJS (ezios)}
     \begin{tabularx}{\textwidth}{r|X}
@@ -177,7 +177,7 @@ I am seeking to work for teams of other like-minded and capable individuals.}
     \end{tabularx}
 \end{table}
 
-\begin{table}[!h]
+\begin{table}[!ht]
 \centering
     \caption{bash-ircbot}
     \begin{tabularx}{\textwidth}{r|X}
