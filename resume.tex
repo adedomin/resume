@@ -32,7 +32,7 @@
 \usepackage{microtype}
 \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 }{}
-\usepackage[margin=2.3cm]{geometry}
+\usepackage[margin=2.3cm,headheight=26.495pt]{geometry}
 \usepackage{hyperref}
 \hypersetup{unicode=true,
             pdftitle={Anthony DeDominic},
@@ -68,7 +68,7 @@
 \fancyhead[L]{\fontsize{24}{10}\selectfont Anthony DeDominic}
 \fancyhead[C]{}
 \fancyhead[R]{\href{tel:+15555555555}{+1 (555) 555-5555}\\\href{mailto:anthony@dedominic.pw}{anthony@dedominic.pw}}
-\fancyfoot[L]{}
+\fancyfoot[L]{\thepage}
 \fancyfoot[C]{}
 \fancyfoot[R]{\qrcode[height=0.5in]{https://github.com/adedomin/resume/raw/master/resume.pdf}}
 \usepackage{tabularx}
@@ -190,15 +190,15 @@ I am seeking to work for teams of other like-minded and capable individuals.}
         \end{tabular}
         & Event driven irc framework/bot 
         written using bash shell scripting and coreutils.
-        executes external programs on events that occur in irc.
-        features dynamic code changing and example plugins. 
+        Executes external programs on events that occur in irc.
+        Features dynamic code changing and example plugins. 
     \end{tabularx}
 \end{table}
 
 \subsection{Competencies}\label{competencies}
 
 \begin{center}
-\begin{longtable}{r|l}
+\begin{tabular}{r|l}
     \multirow{2}{*}{Github} & \href{https://github.com/adedomin}{https://github.com/adedomin} \\
                             & \href{https://github.com/GeneralUnRest}{https://github.com/GeneralUnRest} \\
     \\
@@ -213,7 +213,6 @@ I am seeking to work for teams of other like-minded and capable individuals.}
                               & Leveraging various databases for object and persistent app storage \\
                               & Object oriented and functional design \\
                               & Advanced text processing (regexp, flex/bison, pegjs, etc) \\
-\end{longtable}
+\end{tabular}
 \end{center}
-
 \end{document}
