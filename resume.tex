@@ -7,6 +7,8 @@
 % You should have received a copy of the license along with this
 % work.  If not, see <http://creativecommons.org/licenses/by-sa/4.0/>.
 %
+
+% change to a4paper otherwise...
 \documentclass[letterpaper,]{article}
 
 % sans-serif
@@ -20,9 +22,9 @@
 %\usepackage[]{librebaskerville}
 % end serif
 
+% math, other
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
-\usepackage{qrcode}
 % deprecated as of 2015 \usepackage{fixltx2e} % provides \textsubscript
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
@@ -42,18 +44,27 @@
 \usepackage{microtype}
 \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 }{}
+
+% margins, etc
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% NOTE: set headheight to whatever the warning PDFLaTeX throws!!!! %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage[
     margin=1.6cm,
     headheight=26.495pt,
     includehead,
     includefoot,
 ]{geometry}
+
+% hrefs
 \usepackage{hyperref}
 \hypersetup{unicode=true,
             pdftitle={Anthony DeDominic},
             pdfborder={0 0 0},
             breaklinks=true}
 \urlstyle{same}  % don't use monospace font for urls
+
+% paragraph indenting, other
 \IfFileExists{parskip.sty}{%
 \usepackage{parskip}
 }{% else
@@ -78,6 +89,7 @@
 \hyphenpenalty 10000
 
 % Header bar
+\usepackage{qrcode} % cool qr codes
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhead[L]{\fontsize{24}{10}\selectfont Anthony DeDominic}
@@ -86,12 +98,16 @@
 \fancyfoot[L]{\thepage}
 \fancyfoot[C]{}
 \fancyfoot[R]{\qrcode[height=0.5in]{https://github.com/adedomin/resume/raw/master/resume.pdf}}
+
+% extra table packages and setup
 \usepackage{tabularx}
+% vertically align tabularx columns
 \def\tabularxcolumn#1{m{#1}}
 \usepackage{multirow}
 \usepackage{caption}
+% get rid of ( Figure X: Your Caption )
 \captionsetup{labelformat=empty}
-\usepackage{longtable}
+% \usepackage{longtable}
 
 \author{Anthony DeDominic\\anthony@dedominic.pw\\REDACTED LOCATION\\REDACTED PHONE}
 \title{Anthony DeDominic}
@@ -140,7 +156,7 @@ I am seeking to work for teams of other like-minded and capable individuals.}
 \centering
     \caption{Gilbarco Veeder-Root --- March 2017 to \emph{Current}}
     \begin{tabularx}{\textwidth}{r|X}
-        \begin{tabular}{@{}l@{}}
+        \begin{tabular}{@{}l@{}} % hacky cruft that helps with alignment
             Sysadmin \\
         \end{tabular}
         & Enabling developers by improving embedded NodeJS development,
