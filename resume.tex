@@ -89,7 +89,6 @@
 \hyphenpenalty 10000
 
 % Header bar
-\usepackage{qrcode} % cool qr codes
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhead[L]{\fontsize{24}{10}\selectfont Anthony DeDominic}
@@ -97,7 +96,11 @@
 \fancyhead[R]{\href{tel:+15555555555}{+1 (555) 555-5555}\\\href{mailto:anthony@dedominic.pw}{anthony@dedominic.pw}}
 \fancyfoot[L]{\thepage}
 \fancyfoot[C]{}
-\fancyfoot[R]{\qrcode[height=0.5in]{https://github.com/adedomin/resume/raw/master/resume.pdf}}
+% not really necessary, not really packed with a generic TeXLive setup
+\IfFileExists{qrcode.sty}{%
+    \usepackage{qrcode} % cool qr codes
+    \fancyfoot[R]{\qrcode[height=0.5in]{https://github.com/adedomin/resume/raw/master/resume.pdf}}%
+}
 
 % extra table packages and setup
 \usepackage{tabularx}
